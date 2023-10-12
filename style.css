@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg1: blue;
+    --bg2: white;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+
+    display: grid;
+    place-items: center;
+}
+
+.game-desc{
+    color: white;
+    position: absolute;
+    top: 3rem;
+    text-transform: capitalize; 
+
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.game-container{
+    width: 90%;  
+    max-width: 18rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.box3, .box6{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.box7, .box8{
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn{
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    text-transform: capitalize;
+
+    display: none;
+}
+
+.btn.active{
+    display: block;
+}
+
+.win{
+    background-color: rgba(0, 128, 0, 0.773);
+}
