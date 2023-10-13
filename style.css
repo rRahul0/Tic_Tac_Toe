@@ -7,6 +7,10 @@
 :root {
     --bg1: blue;
     --bg2: white;
+    --win-color: rgba(0, 128, 0, 0.773);
+    --border-color1: rgba(255, 255, 255, 0.35);
+    --border-color1: rgba(255, 255, 255, 0.4);
+    --bg-color: rgba(255, 255, 255, 0.25);
 }
 
 #wrapper {
@@ -19,13 +23,13 @@
 }
 
 .game-desc{
-    color: white;
+    color: var(--bg2);
     position: absolute;
     top: 3rem;
     text-transform: capitalize; 
 
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color2);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
 }
@@ -33,8 +37,8 @@
 .game-container{
     width: 90%;  
     max-width: 18rem;
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color2);
     border-radius: 0.5rem;
     padding: 1.5rem;
     display: grid;
@@ -47,7 +51,7 @@
     aspect-ratio: 1/1;
     position: relative;
     cursor: pointer;
-    color: white;
+    color: var(--bg2);
     font-size: 3rem;
 
     display: flex;
@@ -56,26 +60,26 @@
 }
 
 .box1, .box2, .box4, .box5{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
-    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 2px solid var(--border-color1);
+    border-right: 2px solid var(--border-color1);
 }
 
 .box3, .box6{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 2px solid var(--border-color1);
 }
 
 .box7, .box8{
-    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    border-right: 2px solid var(--border-color1)
 }
 
 .btn{
-    color: white;
+    color: var(--bg2);
     position: absolute;
     bottom: 3rem;
     cursor: pointer;
 
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color2);
     border-radius: 0.5rem;
     padding: 0.6rem 1.5rem;
     text-transform: capitalize;
@@ -88,5 +92,5 @@
 }
 
 .win{
-    background-color: rgba(0, 128, 0, 0.773);
+    background-color: var(--win-color);
 }
