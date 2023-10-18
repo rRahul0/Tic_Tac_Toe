@@ -8,8 +8,9 @@
     --bg1: blue;
     --bg2: white;
     --win-color: rgba(0, 128, 0, 0.773);
-    --border-color1: rgba(255, 255, 255, 0.35);
-    --border-color1: rgba(255, 255, 255, 0.4);
+    
+    --border-color1: rgba(255, 255, 255, 0.289);
+    --border-color2: rgba(255, 255, 255, 0.442);
     --bg-color: rgba(255, 255, 255, 0.25);
 }
 
